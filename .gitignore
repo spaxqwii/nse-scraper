@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.so
+*.egg-info/
+.env
+nse_debug.html
+nse_stocks.json
+*.log
+*.swp
+*.backup
