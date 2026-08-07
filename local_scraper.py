@@ -11,6 +11,9 @@ import re
 import argparse
 from datetime import datetime, timezone
 
+from dotenv import load_dotenv
+load_dotenv()
+
 import boto3
 import requests
 
@@ -107,8 +110,7 @@ def main():
     if not args.dry_run:
         push_to_sqs(stocks)
     else:
-        print("
-(Dry run — not pushing to SQS)")
+        print("(Dry run — not pushing to SQS)")
 
 
 if __name__ == "__main__":
